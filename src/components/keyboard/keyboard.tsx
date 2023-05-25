@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { AppContext } from "../context/keyboard.context";
 
-export default function Keyboard() {
-  const {
-    sample,
-    keyboardContext: { keyboard },
-  } = useContext(AppContext);
+export function Keyboard() {
+  // const {
+  //   sample,
+  //   keyboardContext: { keyboard },
+  // } = useContext(AppContext);
 
   return (
     <>

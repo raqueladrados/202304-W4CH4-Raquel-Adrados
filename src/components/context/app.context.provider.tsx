@@ -1,5 +1,5 @@
 import { AppContext } from "./keyboard.context";
-import { useKeyboard } from "../keyboard/key";
+import { useKeyboard } from "../keyboard/keyboard";
 export function AppContextProvider({ children }: { children: JSX.Element }) {
   const value = {
     sample: "Hola",

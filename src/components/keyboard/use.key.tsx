@@ -1,10 +1,11 @@
 import { useState } from "react"
 import { Telephone } from "../models/telephone"
+
 export function useKeyboard() {
  const [keyboard, setKeyboard] = useState<Telephone[]>([])
 
- const handleHang = (key){
-  setKeyboard()
+ const handleHang = (){
+  setKeyboard
  }
 }
 
@@ -15,4 +16,3 @@ export function useKeyboard() {
 //const [todos, setTodos] = useState(() => createTodos());
 
 
-);

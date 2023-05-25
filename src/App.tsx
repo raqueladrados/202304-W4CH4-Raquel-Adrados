@@ -1,7 +1,11 @@
-import "./App.css";
+import { Keyboard } from "./components/keyboard/keyboard";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Keyboard></Keyboard>
+    </>
+  );
 }
 
 export default App;
