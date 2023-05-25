@@ -1,14 +1,11 @@
-import { Telephone } from "../models/telephone";
+import { useContext } from "react";
+import { AppContext } from "../context/keyboard.context";
 
-export function useKeyboard(){
-const [telephone, setTelephone] = useState<Telephone[]>([]);
-
-}
-
-  //function MyComponent() {
-  //const [age, setAge] = useState(28);
-  //const [name, setName] = useState('Taylor');
-  //const [todos, setTodos] = useState(() => createTodos());
+export default function Keyboard() {
+  const {
+    sample,
+    keyboardContext: { keyboard },
+  } = useContext(AppContext);
 
   return (
     <>
