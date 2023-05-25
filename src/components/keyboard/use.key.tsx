@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { Telephone } from "../models/telephone";
 
 export function useKeyboard() {
   const message = "Llamando";
   const [keyboardCall, setKeyboardCall] = useState(false);
 
-  const handleHang = (telephone: Telephone) => {
+  const handleHang = () => {
     setKeyboardCall(keyboardCall);
     return message;
   };
