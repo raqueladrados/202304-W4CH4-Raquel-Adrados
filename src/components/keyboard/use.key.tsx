@@ -1,18 +1,21 @@
-import { useState } from "react"
-import { Telephone } from "../models/telephone"
+import { useState } from "react";
+import { Telephone } from "../models/telephone";
 
 export function useKeyboard() {
- const [keyboard, setKeyboard] = useState<Telephone[]>([])
+  const message = "Llamando";
+  const [keyboardCall, setKeyboardCall] = useState(false);
 
- const handleHang = (){
-  setKeyboard
- }
+  const handleHang = (telephone: Telephone) => {
+    setKeyboardCall(keyboardCall);
+    return message;
+  };
+
+  return {
+    handleHang,
+  };
 }
-
 
 //function MyComponent() {
 //const [age, setAge] = useState(28);
 //const [name, setName] = useState('Taylor');
 //const [todos, setTodos] = useState(() => createTodos());
-
-
