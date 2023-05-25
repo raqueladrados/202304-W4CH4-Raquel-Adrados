@@ -7,9 +7,7 @@ export function Actions() {
         Call
       </a>
 
-      <a href="#" className="hang active">
-        Hang
-      </a>
+      <a href="#" className="hang active"></a>
     </>
   );
 }
