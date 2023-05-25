@@ -1,6 +1,3 @@
-import { useContext } from "react";
-import { AppContext } from "../context/keyboard.context";
-
 export function Keyboard() {
   // const {
   //   sample,
