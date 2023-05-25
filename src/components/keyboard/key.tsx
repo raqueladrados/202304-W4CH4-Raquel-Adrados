@@ -1,14 +1,10 @@
-import { useCallback, useState } from "react";
 import { Telephone } from "../models/telephone";
 
-type PropsType = {
-  key: Telephone;
-};
-export function Key<T extends Telephone>({ key }: PropsType) {
-  const [telephone, setTelephone] = useState([]);
+export function useKeyboard(){
+const [telephone, setTelephone] = useState<Telephone[]>([]);
 
-  const handleCall )
-  })
+}
+
   //function MyComponent() {
   //const [age, setAge] = useState(28);
   //const [name, setName] = useState('Taylor');
